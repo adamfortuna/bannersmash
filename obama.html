@@ -3587,7 +3587,7 @@ $(document).ready(function() {
 	$.each(cars,function(k,v)
 	{
 		var id = k;
-		var ad = cars[k]['header_ad'];
+    var ad = "images/"+v.type+"_roadblock.jpg";
 
 $("#myModal ul.ad-panel").append($("<li  class='ad'><div class='ad-wrapper'><img src='" + ad + "'/></div><a href='#' data-ad="+k+" class='red-ad-button'>Select</a> </li>"))
 	})
@@ -3598,8 +3598,8 @@ $("#myModal ul.ad-panel").append($("<li  class='ad'><div class='ad-wrapper'><img
      });
      $(".red-ad-button").live('click', function()
      {
-     	var index = $(this).attr('data-id');
-     	setBanner(index);
+     	var index = $(this).attr('data-ad');
+     	setBanners(index);
      	console("calling index " + index);
      })
      
