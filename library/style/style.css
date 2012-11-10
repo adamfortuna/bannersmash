@@ -1,9 +1,13 @@
 
-ul.ad-panel img{width:250px !important; height:200px !important;}
+ul.ad-panel img{width:250px; height:200px;}
 ul.ad-panel {list-style:none}
 ul.ad-panel li{display:inline-block; list-style:none; margin:5px}
 .ad-wrapper{margin-bottom:8px;}
 
+
+#headerPromoContainer { width: 754px; height:67px; overflow: hidden; }
+.ad { cursor: pointer; }
+.ad.selected a { visibility: hidden; }
 
 
 /*****UI***/

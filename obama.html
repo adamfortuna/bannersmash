@@ -3584,23 +3584,40 @@ microsoft_adunit_legacy = "false";
 <a href="#myModal" id="myButton">Test</a>
 <script type="text/javascript">
 $(document).ready(function() {
+  setTimeout(function() { $("#myButton").click(); }, 100);
 	$.each(cars,function(k,v)
 	{
 		var id = k;
     var ad = "images/"+v.type+"_roadblock.jpg";
 
-$("#myModal ul.ad-panel").append($("<li  class='ad'><div class='ad-wrapper'><img src='" + ad + "'/></div><a href='#' data-ad="+k+" class='red-ad-button'>Select</a> </li>"))
+$("#myModal ul.ad-panel").append($("<li class='ad ad-"+k+"' href='#' data-ad="+k+"><div class='ad-wrapper'><img src='" + ad + "'/></div><a class='red-ad-button'>Select</a> </li>"))
 	})
 	
      $('#myButton').click(function(e) {
           e.preventDefault();
-	  $('#myModal').reveal();
+	     $('#myModal').reveal({
+        closeonbackgroundclick: false
+       });
      });
-     $(".red-ad-button").live('click', function()
+
+     $(".ad").live('click', function()
      {
      	var index = $(this).attr('data-ad');
      	setBanners(index);
-     	console("calling index " + index);
+      $(this).addClass('selected');
+      $(".ad:not('.selected')").fadeOut('slow', function(e) { 
+        $(".ad.selected").find('img').animate(
+          {width:'150%', height:'150%'}
+        );
+      });
+      
+
+      setTimeout(function() {
+        $('#myModal').trigger('reveal:close');  
+      }, 2000)
+      
+
+
      })
      
 });
