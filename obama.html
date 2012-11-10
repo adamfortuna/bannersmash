@@ -25,9 +25,10 @@
 <!--[if IE 7]><link rel="stylesheet" href="http://sc.wsj.net/djstyle/1/ie7/NA_WSJ/0_0_WA_0001-20121108202519.css" type="text/css" /><link rel="stylesheet" href="http://sc.wsj.net/css/ie7-wsjdashboard_flat.css" type="text/css" /><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" href="http://sc.wsj.net/djstyle/1/ie8/NA_WSJ/0_0_WA_0001-20121108202519.css" type="text/css" /><link rel="stylesheet" href="http://sc.wsj.net/css/ie8-wsjdashboard_flat.css" type="text/css" /><![endif]-->
 
+<link rel="stylesheet" href="library/reveal/reveal.css"/>
 
     <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js" type="text/javascript"></script>                        
-
+<script src="library/reveal/jquery.reveal.js"></script>
 <script type="text/javascript" language="javascript" charset="utf-8"><!--
 var userName = '(none)';
 
@@ -3652,4 +3653,44 @@ console.groupEnd();
         </div>
     </div>
 </div>
-</div><script type="text/javascript" src="./obama_files/loader.js" async=""></script><iframe src="javascript:void(0)" name="__bkframe" frameborder="0" style="width: 0px; height: 0px;"></iframe><iframe height="1" width="1" name="__bkframe" frameborder="0" src="./obama_files/4454.html"></iframe></body></html>
+<div id="myModal" class="reveal-modal">
+     <h1>Modal Title</h1>
+     <p>Any content could go in here.</p>
+     <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+
+</div>
+<div id="myModal" class="reveal-modal">
+     <h1>Modal Title</h1>
+     <p>Any content could go in here.</p>
+     <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+
+<script type="text/javascript">
+$(document).ready(function() {
+     $('#myButton').click(function(e) {
+          e.preventDefault();
+	  $('#myModal').reveal();
+     });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="./obama_files/loader.js" async=""></script><iframe src="javascript:void(0)" name="__bkframe" frameborder="0" style="width: 0px; height: 0px;"></iframe><iframe height="1" width="1" name="__bkframe" frameborder="0" src="./obama_files/4454.html"></iframe></body></html>
