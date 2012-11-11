@@ -1,5 +1,8 @@
 .ad-panel-holder {text-align:left}
 .ad-panel-holder h1, .ad-panel-holder h2, .ad-panel-holder h3 {color:white;}
+.ad-panel-holder h1,
+.ad-panel-holder h2:hover, 
+.ad-panel-holder h3:hover {cursor:default}
 .ad-panel-holder h3{font-size:18px; }
 .ad-panel-holder h1 {font-size:48px !important; display:inline}
 .ad-panel-holder{width:800px; height:400px; margin:auto; margin-top:50px;}
