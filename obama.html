@@ -2148,7 +2148,7 @@ CODE=SUBJECT SYMBOL=ONEW
           <!-- end module saveToArtMini-collapsed -->             
         </li>   
 </ul>
-</div><div id="ad0_0_WA_0001C" class="adSummary"><iframe src="./obama_files/news_front;u=null--571x47----227,12592,12914,13226,12915,12916;page=article;msrc=WSJ_Election_LEFTTopStories;p39=227;p39=12592;p39=12914;p39=13226;p39=12915;p39=12916;;mc=b2pfreezone_super;tile=3;sz=571x47;ord=2300230023002300.html" id="ad0_0_WA_0001Ciframe" width="571" height="47" scrolling="no" allowtransparency="true" frameborder="0" marginwidth="0" marginheight="0" hspace="0" vspace="0" border="0" style="margin:0px; padding:0px"></iframe></div>
+</div><div id="ad0_0_WA_0001C" class="adSummary"><iframe src="" id="ad0_0_WA_0001Ciframe" width="571" height="47" scrolling="no" allowtransparency="true" frameborder="0" marginwidth="0" marginheight="0" hspace="0" vspace="0" border="0" style="margin:0px; padding:0px"></iframe></div>
 
 
 <div id="articleBodyTools" class="sTools sTools-t clearFix" style="display: block;">         
@@ -3538,14 +3538,17 @@ microsoft_adunit_legacy = "false";
 </div>
 
   
-<a href="#myModal" id="myButton">Test</a>
 <script type="text/javascript">
 $(document).ready(function() {
-  setTimeout(function() { $("#myButton").click(); }, 100);
+  setTimeout(function() { 
+   $('#myModal').reveal({
+        closeonbackgroundclick: false
+       });
+  }, 100);
 	$.each(cars,function(k,v)
 	{
 		var index = k;
-   var ad = "images/"+v.type+"_roadblock.jpg";
+  var ad = "images/"+v.type+"_roadblock.jpg";
 
 $("#myModal ul.ad-panel").append($("<li class='ad ad-"+index+"' href='#' data-ad="+index+"><div class='ad-wrapper'><img src='" + ad + "'/></div><a class='red-ad-button'>Select</a> </li>"))
 	})
