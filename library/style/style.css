@@ -1,4 +1,6 @@
-.ad-panel-holder h1, .ad-panel-holder h2 {color:white;}
+.ad-panel-holder {text-align:left}
+.ad-panel-holder h1, .ad-panel-holder h2, .ad-panel-holder h3 {color:white;}
+.ad-panel-holder h3{font-size:18px; }
 .ad-panel-holder h1 {font-size:48px !important; display:inline}
 .ad-panel-holder{width:800px; height:400px; margin:auto; margin-top:50px;}
 ul.ad-panel img{width:250px; height:200px; border:1px solid grey}
@@ -15,4 +17,8 @@ ul.ad-panel li{display:inline-block; list-style:none; margin:5px}
 
 .myModal {margin-top:50px;}
 
-/*****UI***/
+/**Properties**/
+	.grey{background-color:grey}
+	.float-left{float:left}
+	.float-right{float:right}
+	.easy-hidden{display:none}

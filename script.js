@@ -18,7 +18,10 @@ $(document).ready(function () {
 
     $(".ad").live('click', function () {
         var index = $(this).attr('data-ad');
+        var advert = get_advertisment(index)
         setBanners(index);
+        
+        
         $(this).addClass('selected');
         $(".ad:not('.selected')").fadeOut('slow', function (e) {
             $(".ad.selected").find('img').animate({
@@ -26,13 +29,16 @@ $(document).ready(function () {
                 height: '150%'
             });
         });
+        $(".ad-text").append($("<h1>"+advert.follow_up.additonal_text+"</h1>"))
+        $(".ad-text").show();
 
-
+/*
         setTimeout(function () {
             $('#myModal').trigger('reveal:close');
         }, 2000)
+        */
     })
-
+/*
     var count = 15;
     var counter = setInterval(timer, 1000);
     function timer() {
@@ -47,5 +53,16 @@ $(document).ready(function () {
         $(".count-down").text(count);
     }
 
-
+*/
 });
+function get_advertisment(i)
+{
+	
+var advert  = cars[i];
+
+return advert;
+
+
+	
+}
+}

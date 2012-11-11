@@ -1,17 +1,64 @@
-var cars = [
+var cars  = [
   { 
     type: 'convertible', 
-    link: 'http://www.bmw.com/com/en/newvehicles/bodytype/convertible.html'
+    link: 'http://www.bmw.com/com/en/newvehicles/bodytype/convertible.html',
+    follow_up : {
+    additonal_text: "Find Your Favorite Dealer",
+    link: 'http://www.google.com'
+    }
   },
   { 
     type: 'sedan',
-    link: 'http://www.bmwusa.com/standard/content/vehicles/2013/3/335isedan/default.aspx'
+    link: 'http://www.bmwusa.com/standard/content/vehicles/2013/3/335isedan/default.aspx',
+   follow_up : {
+   	additonal_text: "Find Your Favorite Dealer",
+            link: 'http://www.google.com'
+           }
+
+
   },
   {
     type: 'suv',
-    link: 'http://www.bmw.com/com/en/newvehicles/bodytype/suv.html'
+    link: 'http://www.bmw.com/com/en/newvehicles/bodytype/suv.html',
+    follow_up : {
+    additonal_text: "Find Your Favorite Dealer",
+    link: 'http://www.google.com'
+    }
+
+
   }
 ];
+var shoes  = [
+  { 
+    type: 'boots', 
+    link: 'http://www.bmw.com/com/en/newvehicles/bodytype/convertible.html',
+    follow_up : {
+    additonal_text: "Find Your Favorite Shoe",
+    link: 'http://www.google.com'
+    }
+  },
+  { 
+    type: 'highheels',
+    link: 'http://www.bmwusa.com/standard/content/vehicles/2013/3/335isedan/default.aspx',
+   follow_up : {
+   	additonal_text: "Find Your Favorite Shoe",
+            link: 'http://www.google.com'
+           }
+
+
+  },
+  {
+    type: 'flops',
+    link: 'http://www.bmw.com/com/en/newvehicles/bodytype/suv.html',
+    follow_up : {
+    additonal_text: "Find Your Favorite Shoe",
+    link: 'http://www.google.com'
+    }
+
+
+  }
+];
+
 
 /*
 var cars = [

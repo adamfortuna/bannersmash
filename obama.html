@@ -3531,8 +3531,14 @@ microsoft_adunit_legacy = "false";
 	<ul class="ad-panel">
 		
 	</ul>
+	<div class="ad-text easy-hidden">
+		
+		
+	</div>
 </div>
-     	
+ 	
+   
+   
    
      <a class="close-reveal-modal">close</a>
 </div>
@@ -3563,6 +3569,8 @@ $("#myModal ul.ad-panel").append($("<li class='ad ad-"+index+"' href='#' data-ad
      $(".ad").live('click', function()
      {
      	var index = $(this).attr('data-ad');
+     	        var advert = get_advertisment(index)
+
      	setBanners(index);
       $(this).addClass('selected');
       $(".ad:not('.selected')").fadeOut('slow', function(e) { 
@@ -3571,22 +3579,30 @@ $("#myModal ul.ad-panel").append($("<li class='ad ad-"+index+"' href='#' data-ad
         );
       });
       
-
+      
+          var index = $(this).attr('data-ad');
+        setBanners(index);
+        var a = $("<a href='"+advert.follow_up.link+"'><h3>"+advert.follow_up.additonal_text+"</h3></a>");
+ 
+        $(".ad-text").append(a);
+        $(".ad-text").fadeIn('slow');
+      
+      
+/*
       setTimeout(function() {
         $('#myModal').trigger('reveal:close');  
       }, 2000)
       
-
+*/
 
      })
-
+/*
 var count = 15;
-
-var counter=setInterval(timer, 1000); 
+var counter = setInterval(timer, 1000); 
 
 function timer()
 {
-  count=count-1;
+  count = count-1;
   if (count <= 0)
   {
      clearInterval(counter);
@@ -3599,10 +3615,20 @@ function timer()
   }
 $(".count-down").text(count);
 }
-   
+   */
     
 });
 
+function get_advertisment(i)
+{
+	
+var advert  = cars[i];
+
+return advert;
+
+
+	
+}
 
 </script>
 
