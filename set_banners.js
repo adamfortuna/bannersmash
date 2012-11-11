@@ -3,7 +3,7 @@ var cars  = [
     type: 'convertible', 
     link: 'http://www.bmw.com/com/en/newvehicles/bodytype/convertible.html',
     follow_up : {
-    additonal_text: "Find Your Favorite Dealer",
+    additonal_text: "Test drive a BMW convertible today!",
     link: 'http://www.google.com'
     }
   },
@@ -11,7 +11,7 @@ var cars  = [
     type: 'sedan',
     link: 'http://www.bmwusa.com/standard/content/vehicles/2013/3/335isedan/default.aspx',
    follow_up : {
-   	additonal_text: "Find Your Favorite Dealer",
+   	additonal_text: "Test drive a BMW Sedan today!",
             link: 'http://www.google.com'
            }
 
@@ -21,7 +21,7 @@ var cars  = [
     type: 'suv',
     link: 'http://www.bmw.com/com/en/newvehicles/bodytype/suv.html',
     follow_up : {
-    additonal_text: "Find Your Favorite Dealer",
+    additonal_text: "Test drive a BMW SUV today!",
     link: 'http://www.google.com'
     }
 
@@ -33,7 +33,7 @@ var shoes  = [
     type: 'boots', 
     link: 'http://www.bmw.com/com/en/newvehicles/bodytype/convertible.html',
     follow_up : {
-    additonal_text: "Find Your Favorite Shoe",
+    additonal_text: "Find the boots you're looking for at Zappos",
     link: 'http://www.google.com'
     }
   },
@@ -41,7 +41,7 @@ var shoes  = [
     type: 'highheels',
     link: 'http://www.bmwusa.com/standard/content/vehicles/2013/3/335isedan/default.aspx',
    follow_up : {
-   	additonal_text: "Find Your Favorite Shoe",
+   	additonal_text: "Find the high heels you're looking for at Zappos",
             link: 'http://www.google.com'
            }
 
@@ -51,7 +51,7 @@ var shoes  = [
     type: 'flops',
     link: 'http://www.bmw.com/com/en/newvehicles/bodytype/suv.html',
     follow_up : {
-    additonal_text: "Find Your Favorite Shoe",
+    additonal_text: "Find the flip flops you're looking for at Zappos",
     link: 'http://www.google.com'
     }
 
