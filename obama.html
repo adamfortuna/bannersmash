@@ -3518,15 +3518,18 @@ microsoft_adunit_legacy = "false";
 
 <div id="myModal" class="reveal-modal">
 	<div class="header segment">
-     <h1>BannerSmash</h1>
-
+    <h1>BMW - The Ultimate Driving Machine</h1>
+     <div class='close'>
+      <p>This ad vanishes in <a class="count-down"></a></p>
+      <p><a class="close-reveal-modal">close now</a></p>
+     </div>
 	</div>
 	
      <div class="ad-wrapper">
 
 <div class="ad-panel-holder">
 	<h1>Which Would You Drive?</h1>
-	     					<a class="count-down"></a>
+	     					
 
 	<ul class="ad-panel">
 		
@@ -3536,11 +3539,6 @@ microsoft_adunit_legacy = "false";
 		
 	</div>
 </div>
- 	
-   
-   
-   
-     <a class="close-reveal-modal">close</a>
 </div>
 
   
@@ -3556,7 +3554,7 @@ $(document).ready(function() {
 		var index = k;
   var ad = "images/"+v.type+"_roadblock.jpg";
 
-$("#myModal ul.ad-panel").append($("<li class='ad ad-"+index+"' href='#' data-ad="+index+"><div class='ad-wrapper'><img src='" + ad + "'/></div><a class='red-ad-button'>Select</a> </li>"))
+$("#myModal ul.ad-panel").append($("<li class='ad ad-"+index+"' href='#' data-ad="+index+"><div class='ad-wrapper'><img src='" + ad + "' class='adunit'/><img class='hoverimage' src='images/thumbs-up.png'  /></div><a class='red-ad-button'>Select</a> </li>"))
 	})
 	
      $('#myButton').click(function(e) {
@@ -3610,10 +3608,10 @@ function timer()
   }
   if(count == 1)
   {
-  	        $('#myModal').trigger('reveal:close');  
-
+  	$('#myModal').trigger('reveal:close');  
   }
-$(".count-down").text(count);
+  t = (count == 1) ? "1 second" : "" + count + " seconds";
+$(".count-down").text(t);
 }
    */
     
