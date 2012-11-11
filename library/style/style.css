@@ -5,7 +5,7 @@
 .ad-panel-holder h2:hover, 
 .ad-panel-holder h3:hover {cursor:default}
 .ad-panel-holder h3{font-size:18px; }
-.header h1 { margin-left: 320px; display:block; width: 500px; font-size: 24px; color: #888; padding-top: 10px; float: left; height: 80px; }
+.header h1 { margin-left: 250px; display:block; width: 400px; font-size: 24px; color: #888; padding-top: 10px; float: left; height: 80px; }
 .ad-panel-holder h1 {font-size:48px !important; display:inline}
 .ad-panel-holder{width:800px; height:400px; margin:auto; margin-top:50px;}
 ul.ad-panel { margin-top: 15px; }

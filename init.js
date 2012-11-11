@@ -41,9 +41,9 @@ $("#myModal ul.ad-panel").append($("<li class='ad ad-"+index+"' href='#' data-ad
       
       
       
-      setTimeout(function() {
-        $('#myModal').trigger('reveal:close');  
-      }, 5000)
+      // setTimeout(function() {
+      //   $('#myModal').trigger('reveal:close');  
+      // }, 5000)
       
       
 
