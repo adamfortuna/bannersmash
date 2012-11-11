@@ -12,7 +12,7 @@ ul.ad-panel img.adunit{width:250px; height:200px; border:1px solid #444; border-
 ul.ad-panel img.adunit:hover{border:1px solid #FF4500; }
 ul.ad-panel img.hoverimage { position: absolute; bottom: 10px; right: 10px;opacity: .4; }
 ul.ad-panel li.ad:hover .hoverimage { display: block; opacity:1;}
-ul.ad-panel .ad.selected img.hoverimage, ul.ad-panel li.ad.selected:hover .hoverimage { display: none; }
+ul.ad-panel .ad.chosen img.hoverimage, ul.ad-panel li.ad.chosen:hover .hoverimage { display: none; }
 
 
 ul.ad-panel {list-style:none; width:850px; margin:auto;}
