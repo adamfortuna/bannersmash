@@ -1,6 +1,9 @@
-
-ul.ad-panel img{width:250px; height:200px;}
-ul.ad-panel {list-style:none}
+.ad-panel-holder h1, .ad-panel-holder h2 {color:white;}
+.ad-panel-holder h1 {font-size:48px !important; display:inline}
+.ad-panel-holder{width:800px; height:400px; margin:auto; margin-top:50px;}
+ul.ad-panel img{width:250px; height:200px; border:1px solid grey}
+ul.ad-panel img:hover{border:1px solid #FF4500}
+ul.ad-panel {list-style:none; width:850px; margin:auto;}
 ul.ad-panel li{display:inline-block; list-style:none; margin:5px}
 .ad-wrapper{margin-bottom:8px;}
 
@@ -8,38 +11,8 @@ ul.ad-panel li{display:inline-block; list-style:none; margin:5px}
 #headerPromoContainer { width: 754px; height:67px; overflow: hidden; }
 .ad { cursor: pointer; }
 .ad.selected a { visibility: hidden; }
+.count-down{text-align:right;display:inline; color:#FF4500; font-size:18px; font-weight:bold; margin-left:240px;}
 
+.myModal {margin-top:50px;}
 
 /*****UI***/
-.red-ad-button {
-	margin:5px;
-   border-top: 1px solid #ff0000;
-   background: #d66565;
-   background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#d66565));
-   background: -webkit-linear-gradient(top, #ff0000, #d66565);
-   background: -moz-linear-gradient(top, #ff0000, #d66565);
-   background: -ms-linear-gradient(top, #ff0000, #d66565);
-   background: -o-linear-gradient(top, #ff0000, #d66565);
-   padding: 4.5px 9px;
-   -webkit-border-radius: 4px;
-   -moz-border-radius: 4px;
-   border-radius: 4px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: #ffffff;
-   font-size: 23px;
-   font-family: Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-.red-ad-button:hover {
-   border-top-color: #782929;
-   background: #782929;
-   color: #ccc;
-   }
-.red-ad-button:active {
-   border-top-color: #5c1b1b;
-   background: #5c1b1b;
-   }
