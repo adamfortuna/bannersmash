@@ -67,5 +67,4 @@ function timer()
   t = (count == 1) ? "1 second" : "" + count + " seconds";
 $(".count-down").text(t);
 }
-    
-});
+    });
