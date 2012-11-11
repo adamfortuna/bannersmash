@@ -5,7 +5,7 @@
 .ad-panel-holder h1 {font-size:48px !important; display:inline}
 .ad-panel-holder{width:800px; height:400px; margin:auto; margin-top:50px;}
 
-ul.ad-panel img.adunit{width:250px; height:200px; border:1px solid grey; }
+ul.ad-panel img.adunit{width:250px; height:200px; border:1px solid #444; border-radius: 4px}
 ul.ad-panel img.adunit:hover{border:1px solid #FF4500; }
 ul.ad-panel img.hoverimage { position: absolute; bottom: 10px; right: 10px;opacity: .4; }
 ul.ad-panel li.ad:hover .hoverimage { display: block; opacity:1;}
