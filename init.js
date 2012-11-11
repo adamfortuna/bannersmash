@@ -29,7 +29,7 @@ $("#myModal ul.ad-panel").append($("<li class='ad ad-"+index+"' href='#' data-ad
       $(this).addClass('selected');
       $(".ad:not('.selected')").fadeOut('slow', function(e) { 
         $(".ad.selected").find('img:first').animate(
-          {width:'500px', height:'500px'}
+          {width:'450px', height:'450px'}
         );
       });
       
@@ -42,9 +42,11 @@ $("#myModal ul.ad-panel").append($("<li class='ad ad-"+index+"' href='#' data-ad
         $(".ad-text").fadeIn('slow');
       
       
+      /*
       setTimeout(function() {
         $('#myModal').trigger('reveal:close');  
-      }, 2000)
+      }, 5000)
+      */
       
 
      })
