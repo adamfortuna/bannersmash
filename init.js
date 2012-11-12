@@ -49,7 +49,7 @@ $("#myModal ul.ad-panel").append($("<li class='ad ad-"+index+"' href='#' data-ad
 
      })
 
-var count = 60;
+var count = 15;
 var counter = setInterval(timer, 1000); 
 
 function timer()
